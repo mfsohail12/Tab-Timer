@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab Timer</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 10px;
+        width: 250px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 14px;
+        color: #555;
+        margin: 5px 0;
+        text-align: center;
+      }
+
+      .timer {
+        font-size: 16px;
+        font-weight: bold;
+        color: #4caf50;
+        background-color: #e8f5e9;
+        padding: 8px 15px;
+        border-radius: 8px;
+        margin-top: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 100%;
+      }
+
+      .start {
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+        background-color: #ce97f7;
+        padding: 3px 8px;
+        border-radius: 10px;
+        margin: 3px 0px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tab Timer</h1>
+    <p class="start" id="openTime">Tab opened at:</p>
+    <p>You've opened this tab for:</p>
+    <p class="timer" id="timerDisplay">00 seconds</p>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
